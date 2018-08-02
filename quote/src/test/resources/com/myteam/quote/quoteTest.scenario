@@ -33,17 +33,17 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>22</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>6</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>price</fieldName>
           <expected>250</expected>
-          <actualResult>No match</actualResult>
+          <actualResult>250</actualResult>
           <successResult>false</successResult>
-          <explanation>Fact of type [Quote] was not found in the results.</explanation>
+          <explanation>[Quote] field [price] was [250] expected [251].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -52,7 +52,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2018-08-02 18:27:45.11 UTC</lastRunResult>
+  <lastRunResult>2018-08-02 18:47:28.595 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myteam.quote</packageName>
