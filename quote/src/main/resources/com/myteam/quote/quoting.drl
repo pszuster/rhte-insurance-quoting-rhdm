@@ -1,6 +1,6 @@
 package com.myteam.quote;
 
-rule "init"
+rule "init" salience 100
     dialect "mvel"
     when 
        not(Quote())
