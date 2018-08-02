@@ -6,6 +6,7 @@ rule "init"
         Quote()
     then
         Quote quote = new Quote();
+        quote.setPrice(0);
 end
      
 
