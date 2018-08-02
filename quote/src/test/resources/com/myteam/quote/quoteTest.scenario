@@ -15,6 +15,18 @@
       <name>d</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>Quote</type>
+      <fieldData>
+        <field-data>
+          <name>price</name>
+          <value>0</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>quote</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace>
       <executionTimeResult>22</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
