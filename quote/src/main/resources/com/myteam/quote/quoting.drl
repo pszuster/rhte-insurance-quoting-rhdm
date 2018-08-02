@@ -1,6 +1,6 @@
 package com.myteam.quote;
 
-Quote q = new Quote();
+declare Quote q= new Quote();
 
 //from row number: 1
 //young
