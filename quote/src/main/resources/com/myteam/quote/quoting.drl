@@ -1,6 +1,13 @@
 package com.myteam.quote;
 
-declare Quote q= new Quote();
+rule "init"
+    dialect "mvel"
+    when 
+        Quote()
+    then
+        Quote q = new Quote();
+end
+     
 
 //from row number: 1
 //young
