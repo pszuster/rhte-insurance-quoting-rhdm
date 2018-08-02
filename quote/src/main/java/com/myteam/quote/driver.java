@@ -6,12 +6,70 @@ package com.myteam.quote;
 
 public class driver implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public driver() {
-    }
+	@org.kie.api.definition.type.Label(value = "DriverID")
+	private java.lang.Integer driverID;
+	@org.kie.api.definition.type.Label(value = "First Name")
+	private java.lang.String firstName;
+	@org.kie.api.definition.type.Label(value = "Last Name")
+	private java.lang.String lastName;
+	@org.kie.api.definition.type.Label(value = "Age")
+	private java.lang.Integer age;
+	@org.kie.api.definition.type.Label(value = "Fines")
+	private java.lang.Integer fines;
 
+	public driver() {
+	}
 
+	public java.lang.Integer getDriverID() {
+		return this.driverID;
+	}
 
+	public void setDriverID(java.lang.Integer driverID) {
+		this.driverID = driverID;
+	}
+
+	public java.lang.String getFirstName() {
+		return this.firstName;
+	}
+
+	public void setFirstName(java.lang.String firstName) {
+		this.firstName = firstName;
+	}
+
+	public java.lang.String getLastName() {
+		return this.lastName;
+	}
+
+	public void setLastName(java.lang.String lastName) {
+		this.lastName = lastName;
+	}
+
+	public java.lang.Integer getAge() {
+		return this.age;
+	}
+
+	public void setAge(java.lang.Integer age) {
+		this.age = age;
+	}
+
+	public java.lang.Integer getFines() {
+		return this.fines;
+	}
+
+	public void setFines(java.lang.Integer fines) {
+		this.fines = fines;
+	}
+
+	public driver(java.lang.Integer driverID, java.lang.String firstName,
+			java.lang.String lastName, java.lang.Integer age,
+			java.lang.Integer fines) {
+		this.driverID = driverID;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.age = age;
+		this.fines = fines;
+	}
 
 }
