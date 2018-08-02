@@ -63,6 +63,7 @@ rule "Row 5 quoting"
 	dialect "mvel"
 	when
 		f1 : driver( fines > 0 , fines <= 2 )
+		quote: Quote()
 	then
 		quote.setPrice( quote.getPrice() + 150.0 );
 		update( quote );
