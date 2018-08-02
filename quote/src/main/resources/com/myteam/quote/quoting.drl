@@ -1,5 +1,7 @@
 package com.myteam.quote;
 
+Quote q = new Quote();
+
 //from row number: 1
 //young
 rule "Row 1 quoting"
@@ -7,8 +9,7 @@ rule "Row 1 quoting"
 	when
 		f1 : driver( age > 18 , age <= 25 )
 	then
-		Quote quote = new Quote();
-		quote.setPrice( 100.0 );
+		quote.setPrice( quote.getPrice() + 100.0 );
 		insert( quote );
 end
 
@@ -19,8 +20,7 @@ rule "Row 2 quoting"
 	when
 		f1 : driver( age > 26 , age <= 35 )
 	then
-		Quote quote = new Quote();
-		quote.setPrice( 200.0 );
+		quote.setPrice( quote.getPrice() + 200.0 );
 		insert( quote );
 end
 
@@ -31,8 +31,7 @@ rule "Row 3 quoting"
 	when
 		f1 : driver( age > 36 , age <= 50 )
 	then
-		Quote quote = new Quote();
-		quote.setPrice( 300.0 );
+		quote.setPrice( quote.getPrice() + 300.0 );
 		insert( quote );
 end
 
@@ -43,8 +42,7 @@ rule "Row 4 quoting"
 	when
 		f1 : driver( age > 51 )
 	then
-		Quote quote = new Quote();
-		quote.setPrice( 450.0 );
+		quote.setPrice( quote.getPrice() + 450.0 );
 		insert( quote );
 end
 
@@ -55,8 +53,7 @@ rule "Row 5 quoting"
 	when
 		f1 : driver( fines > 0 , fines <= 2 )
 	then
-		Quote quote = new Quote();
-		quote.setPrice( 150.0 );
+		quote.setPrice( quote.getPrice() + 150.0 );
 		insert( quote );
 end
 
@@ -67,8 +64,7 @@ rule "Row 6 quoting"
 	when
 		f1 : driver( fines > 3 , fines <= 5 )
 	then
-		Quote quote = new Quote();
-		quote.setPrice( 250.0 );
+		quote.setPrice( quote.getPrice() + 250.0 );
 		insert( quote );
 end
 
@@ -79,8 +75,7 @@ rule "Row 7 quoting"
 	when
 		f1 : driver( fines > 6 )
 	then
-		Quote quote = new Quote();
-		quote.setPrice( 400.0 );
+		quote.setPrice( quote.getPrice() + 400.0 );
 		insert( quote );
 end
 
