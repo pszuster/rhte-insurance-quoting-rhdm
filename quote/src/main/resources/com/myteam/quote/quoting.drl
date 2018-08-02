@@ -10,7 +10,7 @@ rule "Row 1 quoting"
 		f1 : driver( age > 18 , age <= 25 )
 		quote: Quote()
 	then
-		quote.setPrice( quote.getPrice() + 100.0 );
+		quote.setPrice( quote.getPrice() + 100 );
 		update( quote );
 end
 
@@ -22,7 +22,7 @@ rule "Row 2 quoting"
 		f1 : driver( age > 26 , age <= 35 )
 		quote: Quote()
 	then
-		quote.setPrice( quote.getPrice() + 200.0 );
+		quote.setPrice( quote.getPrice() + 200 );
 		update( quote );
 end
 
