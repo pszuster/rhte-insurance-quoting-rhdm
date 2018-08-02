@@ -8,21 +8,21 @@ public class Quote implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Price")
-	private java.lang.Double price;
+	@org.kie.api.definition.type.Label("Price")
+	private Integer price;
 
 	public Quote() {
 	}
 
-	public java.lang.Double getPrice() {
+	public java.lang.Integer getPrice() {
 		return this.price;
 	}
 
-	public void setPrice(java.lang.Double price) {
+	public void setPrice(java.lang.Integer price) {
 		this.price = price;
 	}
 
-	public Quote(java.lang.Double price) {
+	public Quote(java.lang.Integer price) {
 		this.price = price;
 	}
 
