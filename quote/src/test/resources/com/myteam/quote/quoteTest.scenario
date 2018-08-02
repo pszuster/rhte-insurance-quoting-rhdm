@@ -11,6 +11,11 @@
           <value>20</value>
           <nature>4</nature>
         </field-data>
+        <field-data>
+          <name>fines</name>
+          <value>1</value>
+          <nature>4</nature>
+        </field-data>
       </fieldData>
       <name>d</name>
       <isModify>false</isModify>
@@ -35,7 +40,7 @@
       <fieldValues>
         <expect-field>
           <fieldName>price</fieldName>
-          <expected>100</expected>
+          <expected>250</expected>
           <actualResult>No match</actualResult>
           <successResult>false</successResult>
           <explanation>Fact of type [Quote] was not found in the results.</explanation>
