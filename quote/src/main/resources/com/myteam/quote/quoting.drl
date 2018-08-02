@@ -1,14 +1,6 @@
 package com.myteam.quote;
 
-rule "init" salience 100
-    dialect "mvel"
-    when 
-       not(Quote())
-    then
-        Quote quote = new Quote();
-        quote.setPrice(0);
-end
-     
+
 
 //from row number: 1
 //young
