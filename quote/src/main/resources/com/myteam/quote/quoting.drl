@@ -10,8 +10,7 @@ rule "Row 1 quoting"
 		f1 : driver( age > 18 , age <= 25 )
 		quote: Quote()
 	then
-		quote.setPrice( quote.getPrice() + 100 );
-		update( quote );
+		modify(quote){ price = quote.price +100};
 end
 
 //from row number: 2
@@ -22,8 +21,7 @@ rule "Row 2 quoting"
 		f1 : driver( age > 26 , age <= 35 )
 		quote: Quote()
 	then
-		quote.setPrice( quote.getPrice() + 200 );
-		update( quote );
+		modify(quote){ price = quote.price +200};
 end
 
 //from row number: 3
@@ -34,8 +32,7 @@ rule "Row 3 quoting"
 		f1 : driver( age > 36 , age <= 50 )
 		quote: Quote()
 	then
-		quote.setPrice( quote.getPrice() + 300 );
-		update( quote );
+		modify(quote){ price = quote.price +300};
 end
 
 //from row number: 4
@@ -46,8 +43,7 @@ rule "Row 4 quoting"
 		f1 : driver( age > 51 )
 		quote: Quote()
 	then
-		quote.setPrice( quote.getPrice() + 450);
-		update( quote );
+	    modify(quote){ price = quote.price +450};
 end
 
 //from row number: 5
@@ -58,8 +54,7 @@ rule "Row 5 quoting"
 		f1 : driver( fines > 0 , fines <= 2 )
 		quote: Quote()
 	then
-		quote.setPrice( quote.getPrice() + 150 );
-		update( quote );
+		modify(quote){ price = quote.price +150};
 end
 
 //from row number: 6
@@ -70,8 +65,7 @@ rule "Row 6 quoting"
 		f1 : driver( fines > 3 , fines <= 5 )
 		quote: Quote()
 	then
-		quote.setPrice( quote.getPrice() + 250 );
-		update( quote );
+		modify(quote){ price = quote.price +250};
 end
 
 //from row number: 7
@@ -82,7 +76,6 @@ rule "Row 7 quoting"
 		f1 : driver( fines > 6 )
 		quote: Quote()
 	then
-		quote.setPrice( quote.getPrice() + 400 );
-		update( quote );
+		modify(quote){ price = quote.price +400};
 end
 
