@@ -1,2 +1,86 @@
 package com.myteam.quote;
 
+//from row number: 1
+//young
+rule "Row 1 quoting"
+	dialect "mvel"
+	when
+		f1 : driver( age > 18 , age <= 25 )
+	then
+		Quote quote = new Quote();
+		quote.setPrice( 100.0 );
+		insert( quote );
+end
+
+//from row number: 2
+//young adult
+rule "Row 2 quoting"
+	dialect "mvel"
+	when
+		f1 : driver( age > 26 , age <= 35 )
+	then
+		Quote quote = new Quote();
+		quote.setPrice( 200.0 );
+		insert( quote );
+end
+
+//from row number: 3
+//adult
+rule "Row 3 quoting"
+	dialect "mvel"
+	when
+		f1 : driver( age > 36 , age <= 50 )
+	then
+		Quote quote = new Quote();
+		quote.setPrice( 300.0 );
+		insert( quote );
+end
+
+//from row number: 4
+//old
+rule "Row 4 quoting"
+	dialect "mvel"
+	when
+		f1 : driver( age > 51 )
+	then
+		Quote quote = new Quote();
+		quote.setPrice( 450.0 );
+		insert( quote );
+end
+
+//from row number: 5
+//few  fines
+rule "Row 5 quoting"
+	dialect "mvel"
+	when
+		f1 : driver( fines > 0 , fines <= 2 )
+	then
+		Quote quote = new Quote();
+		quote.setPrice( 150.0 );
+		insert( quote );
+end
+
+//from row number: 6
+//some fines
+rule "Row 6 quoting"
+	dialect "mvel"
+	when
+		f1 : driver( fines > 3 , fines <= 5 )
+	then
+		Quote quote = new Quote();
+		quote.setPrice( 250.0 );
+		insert( quote );
+end
+
+//from row number: 7
+//lot of fines
+rule "Row 7 quoting"
+	dialect "mvel"
+	when
+		f1 : driver( fines > 6 )
+	then
+		Quote quote = new Quote();
+		quote.setPrice( 400.0 );
+		insert( quote );
+end
+
