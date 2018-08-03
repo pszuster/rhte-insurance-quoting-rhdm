@@ -1,6 +1,7 @@
 package com.myteam.quote;
 
 rule "create quote"
+salience 100
  dialect "mvel"
  when
      not(exists Quote())
