@@ -65,7 +65,8 @@ rule "Row 5 quoting"
 		f1 : driver( fines > 0 , fines <= 2 )
 		quote: Quote()
 	then
-		modify(quote){ price = quote.price +150};
+	quote.setPrice(quote.getPrice+150);
+	//	modify(quote){ price = quote.price +150};
 		update(quote);
 end
 
