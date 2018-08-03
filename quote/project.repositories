@@ -3,17 +3,17 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>guvnor-m2-repo</id>
-        <url>http://rhdm7-loan-rhdmcentr-rhdm7-loan.192.168.42.179.nip.io/maven2/</url>
-        <source>PROJECT</source>
+        <id>local</id>
+        <url>/home/jboss/.m2/repository</url>
+        <source>LOCAL</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>local</id>
-        <url>/home/jboss/.m2/repository</url>
-        <source>LOCAL</source>
+        <id>guvnor-m2-repo</id>
+        <url>http://rhdm7-loan-rhdmcentr-rhdm7-loan.192.168.42.179.nip.io/maven2/</url>
+        <source>PROJECT</source>
       </metadata>
     </repository>
     <repository>
