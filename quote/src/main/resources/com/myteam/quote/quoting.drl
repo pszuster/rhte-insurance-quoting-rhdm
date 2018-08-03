@@ -19,6 +19,7 @@ rule "Row 1 quoting"
 		quote: Quote()
 	then
 		modify(quote){ price = quote.price +100};
+		update(quote);
 end
 
 //from row number: 2
@@ -30,6 +31,7 @@ rule "Row 2 quoting"
 		quote: Quote()
 	then
 		modify(quote){ price = quote.price +200};
+		update(quote);
 end
 
 //from row number: 3
@@ -63,6 +65,7 @@ rule "Row 5 quoting"
 		quote: Quote()
 	then
 		modify(quote){ price = quote.price +150};
+		update(quote);
 end
 
 //from row number: 6
