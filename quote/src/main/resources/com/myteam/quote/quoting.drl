@@ -18,7 +18,8 @@ rule "Row 1 quoting"
 		f1 : driver( age > 18 , age <= 25 )
 		quote: Quote()
 	then
-		modify(quote){ price = quote.price +100};
+	    quote.setPrice(quote.getPrice+100);
+	//	modify(quote){ price = quote.price +100};
 		update(quote);
 end
 
