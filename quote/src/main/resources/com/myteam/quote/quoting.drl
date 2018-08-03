@@ -1,6 +1,12 @@
 package com.myteam.quote;
 
-
+rule "create quote"
+ dialect "mvel"
+ when
+     not(exists Quote())
+ then
+     insert Quote()
+end
 
 //from row number: 1
 //young
