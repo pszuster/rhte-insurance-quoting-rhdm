@@ -1,6 +1,6 @@
 package com.myteam.quote;
 
-rule "create quote"
+/*rule "create quote"
 salience 1000000
  dialect "mvel"
  when
@@ -8,7 +8,7 @@ salience 1000000
      Quote quote = new Quote();
      quote.price=0;
      insert (quote);
-end
+end*/
 
 //from row number: 1
 //young
