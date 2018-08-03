@@ -5,8 +5,9 @@ salience 1000000
  dialect "mvel"
  when
  then
-    
-     insert (new Quote);
+     Quote quote = new Quote();
+     quote.price=0;
+     insert (quote);
 end
 
 //from row number: 1
