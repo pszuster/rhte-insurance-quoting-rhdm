@@ -6,7 +6,8 @@ rule "create quote"
      not(exists Quote())
  then
     Quote quote = new Quote();
-     insert (quote)
+    modify(quote){price=0};
+     insert (quote);
 end
 
 //from row number: 1
