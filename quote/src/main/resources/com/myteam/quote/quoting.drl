@@ -1,14 +1,12 @@
 package com.myteam.quote;
 
 rule "create quote"
-salience 100
+salience 1000000
  dialect "mvel"
  when
-     not(exists Quote())
  then
-    Quote quote = new Quote();
-    modify(quote){price=0};
-     insert (quote);
+    
+     insert (new Quote);
 end
 
 //from row number: 1
