@@ -5,7 +5,8 @@ rule "create quote"
  when
      not(exists Quote())
  then
-     insert Quote()
+    Quote quote = new Quote();
+     insert (quote)
 end
 
 //from row number: 1
