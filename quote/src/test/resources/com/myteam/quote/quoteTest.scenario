@@ -4,23 +4,6 @@
   <globals/>
   <fixtures>
     <fact-data>
-      <type>driver</type>
-      <fieldData>
-        <field-data>
-          <name>age</name>
-          <value>20</value>
-          <nature>4</nature>
-        </field-data>
-        <field-data>
-          <name>fines</name>
-          <value>1</value>
-          <nature>4</nature>
-        </field-data>
-      </fieldData>
-      <name>d</name>
-      <isModify>false</isModify>
-    </fact-data>
-    <fact-data>
       <type>Quote</type>
       <fieldData>
         <field-data>
@@ -28,8 +11,26 @@
           <value>0</value>
           <nature>4</nature>
         </field-data>
+        <field-data>
+          <fieldName>driver</fieldName>
+          <fact>
+            <type>driver</type>
+            <fieldData>
+              <field-data>
+                <name>age</name>
+                <value>20</value>
+                <nature>4</nature>
+              </field-data>
+              <field-data>
+                <name>fines</name>
+                <value>0</value>
+                <nature>4</nature>
+              </field-data>
+            </fieldData>
+          </fact>
+        </field-data>
       </fieldData>
-      <name>quote</name>
+      <name>q</name>
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
@@ -40,7 +41,7 @@
       <fieldValues>
         <expect-field>
           <fieldName>price</fieldName>
-          <expected>250</expected>
+          <expected>150</expected>
           <actualResult>250</actualResult>
           <successResult>false</successResult>
           <explanation>[Quote] field [price] was [250] expected [251].</explanation>
