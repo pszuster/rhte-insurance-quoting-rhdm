@@ -61,6 +61,6 @@
     <imports/>
   </imports>
   <ksessions>
-    <string>defaultKieSession</string>
+    <string>default-stateless-ksession</string>
   </ksessions>
 </scenario>
