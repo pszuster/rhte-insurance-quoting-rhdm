@@ -7,11 +7,6 @@
       <type>Quote</type>
       <fieldData>
         <field-data>
-          <name>price</name>
-          <value>0</value>
-          <nature>4</nature>
-        </field-data>
-        <field-data>
           <fieldName>driver</fieldName>
           <fact>
             <type>driver</type>
@@ -29,8 +24,13 @@
             </fieldData>
           </fact>
         </field-data>
+        <field-data>
+          <name>price</name>
+          <value>0</value>
+          <nature>4</nature>
+        </field-data>
       </fieldData>
-      <name>q</name>
+      <name>quote</name>
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
