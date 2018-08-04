@@ -45,12 +45,10 @@ end
 rule "Row 5 quoting"
 	dialect "mvel"
 	when
-		f1 : driver( fines > 0 , fines <= 2 )
-		quote: Quote()
+		quote: Quote(driver.fines >=1 && driver.fines <3)
 	then
-	quote.setPrice(quote.getPrice+150);
-	//	modify(quote){ price = quote.price +150};
-		update(quote);
+    	quote.setPrice(quote.getPrice+150);
+
 end
 
 //from row number: 6
@@ -58,10 +56,9 @@ end
 rule "Row 6 quoting"
 	dialect "mvel"
 	when
-		f1 : driver( fines > 3 , fines <= 5 )
-		quote: Quote()
+		quote: Quote(driver.fines >=3 && driver.fines <6)
 	then
-		modify(quote){ price = quote.price +250};
+		quote.setPrice(quote.getPrice+250);
 end
 
 //from row number: 7
@@ -69,9 +66,8 @@ end
 rule "Row 7 quoting"
 	dialect "mvel"
 	when
-		f1 : driver( fines > 6 )
-		quote: Quote()
+			quote: Quote(driver.fines >=6)
 	then
-		modify(quote){ price = quote.price +400};
+		quote.setPrice(quote.getPrice+500);
 end
 
