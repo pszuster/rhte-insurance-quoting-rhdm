@@ -1,26 +1,13 @@
 package com.myteam.quote;
 
-/*rule "create quote"
-salience 1000000
- dialect "mvel"
- when
- then
-     Quote quote = new Quote();
-     quote.price=0;
-     insert (quote);
-end*/
-
 //from row number: 1
 //young
 rule "Row 1 quoting"
 	dialect "mvel"
 	when
-		f1 : driver( age > 18 , age <= 25 )
-		quote: Quote()
+		quote: Quote(driver.age >= 18 && driver.age <25)
 	then
 	    quote.setPrice(quote.getPrice+100);
-	//	modify(quote){ price = quote.price +100};
-		update(quote);
 end
 
 //from row number: 2
@@ -28,11 +15,9 @@ end
 rule "Row 2 quoting"
 	dialect "mvel"
 	when
-		f1 : driver( age > 26 , age <= 35 )
-		quote: Quote()
+		quote: Quote(driver.age >= 25 && driver.age <35)
 	then
-		modify(quote){ price = quote.price +200};
-		update(quote);
+		 quote.setPrice(quote.getPrice+200);
 end
 
 //from row number: 3
@@ -40,21 +25,19 @@ end
 rule "Row 3 quoting"
 	dialect "mvel"
 	when
-		f1 : driver( age > 36 , age <= 50 )
-		quote: Quote()
+	    quote: Quote(driver.age >= 35 && driver.age <60)
 	then
-		modify(quote){ price = quote.price +300};
+		quote.setPrice(quote.getPrice+300);
 end
 
 //from row number: 4
 //old
 rule "Row 4 quoting"
 	dialect "mvel"
-	when
-		f1 : driver( age > 51 )
-		quote: Quote()
+	when 
+	    quote: Quote(driver.age >= 60)
 	then
-	    modify(quote){ price = quote.price +450};
+	    quote.setPrice(quote.getPrice+500);
 end
 
 //from row number: 5
