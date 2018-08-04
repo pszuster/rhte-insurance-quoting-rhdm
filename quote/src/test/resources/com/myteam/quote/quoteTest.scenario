@@ -41,12 +41,9 @@
       <fieldValues>
         <expect-field>
           <fieldName>price</fieldName>
-          <expected>150</expected>
-          <actualResult>250</actualResult>
-          <successResult>false</successResult>
-          <explanation>[Quote] field [price] was [250] expected [251].</explanation>
+          <expected>100</expected>
           <operator>==</operator>
-          <nature>1</nature>
+          <nature>0</nature>
         </expect-field>
       </fieldValues>
       <name>Quote</name>
