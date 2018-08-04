@@ -11,6 +11,9 @@ public class Quote implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Price")
 	private Integer price;
 
+	@org.kie.api.definition.type.Label(value = "Driver")
+	private com.myteam.quote.driver driver;
+
 	public Quote() {
 	}
 
@@ -22,8 +25,17 @@ public class Quote implements java.io.Serializable {
 		this.price = price;
 	}
 
-	public Quote(java.lang.Integer price) {
+	public com.myteam.quote.driver getDriver() {
+		return this.driver;
+	}
+
+	public void setDriver(com.myteam.quote.driver driver) {
+		this.driver = driver;
+	}
+
+	public Quote(java.lang.Integer price, com.myteam.quote.driver driver) {
 		this.price = price;
+		this.driver = driver;
 	}
 
 }
