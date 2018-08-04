@@ -61,6 +61,10 @@ public class driver implements java.io.Serializable {
 	public void setFines(java.lang.Integer fines) {
 		this.fines = fines;
 	}
+	
+	public driver(java.lang.Integer age){
+		this.age = age;
+	}
 
 	public driver(java.lang.Integer driverID, java.lang.String firstName,
 			java.lang.String lastName, java.lang.Integer age,
