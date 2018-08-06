@@ -357,9 +357,9 @@
                 <fieldType>Vehicle</fieldType>
               </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                <value>Calendar.getInstance().get(Calendar.YEAR) - $minModelYear</value>
-                <operator>&gt;=</operator>
-                <constraintValueType>3</constraintValueType>
+                <value>$maxModelYear</value>
+                <operator>&lt;</operator>
+                <constraintValueType>7</constraintValueType>
                 <expression>
                   <parts/>
                   <index>2147483647</index>
@@ -382,7 +382,7 @@
               </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
                 <value>$maxModelYear</value>
-                <operator>&lt;</operator>
+                <operator>&gt;=</operator>
                 <constraintValueType>7</constraintValueType>
                 <expression>
                   <parts/>
