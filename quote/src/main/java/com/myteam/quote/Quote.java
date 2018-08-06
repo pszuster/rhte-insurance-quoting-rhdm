@@ -29,11 +29,11 @@ public class Quote implements java.io.Serializable {
 		return this.driver;
 	}
 
-	public void setDriver(com.myteam.quote.driver driver) {
+	public void setDriver(com.myteam.quote.Driver driver) {
 		this.driver = driver;
 	}
 
-	public Quote(java.lang.Integer price, com.myteam.quote.driver driver) {
+	public Quote(java.lang.Integer price, com.myteam.quote.Driver driver) {
 		this.price = price;
 		this.driver = driver;
 	}
