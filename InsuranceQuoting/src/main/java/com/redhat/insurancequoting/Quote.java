@@ -10,6 +10,8 @@ public class Quote implements java.io.Serializable {
 
 	private java.lang.Double price;
 
+	private com.redhat.insurancequoting.Driver driver;
+
 	public Quote() {
 	}
 
@@ -21,8 +23,18 @@ public class Quote implements java.io.Serializable {
 		this.price = price;
 	}
 
-	public Quote(java.lang.Double price) {
+	public com.redhat.insurancequoting.Driver getDriver() {
+		return this.driver;
+	}
+
+	public void setDriver(com.redhat.insurancequoting.Driver driver) {
+		this.driver = driver;
+	}
+
+	public Quote(java.lang.Double price,
+			com.redhat.insurancequoting.Driver driver) {
 		this.price = price;
+		this.driver = driver;
 	}
 
 }
