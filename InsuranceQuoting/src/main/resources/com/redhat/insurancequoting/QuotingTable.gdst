@@ -250,7 +250,7 @@
       <header>Price-Fines</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>quote1.setPrice(quote1.getPrice() + @{prime})</text>
+          <text>quote1.setPrice(quote1.getPrice() + @{prime2})</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
       <childColumns>
@@ -258,7 +258,7 @@
           <hideColumn>false</hideColumn>
           <width>100</width>
           <header>Price-Fines</header>
-          <varName>prime</varName>
+          <varName>prime2</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
       </childColumns>
