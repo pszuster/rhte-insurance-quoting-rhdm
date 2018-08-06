@@ -8,19 +8,11 @@ public class Quote implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.Double price;
+	private Integer price;
 
 	private com.redhat.insurancequoting.Driver driver;
 
 	public Quote() {
-	}
-
-	public java.lang.Double getPrice() {
-		return this.price;
-	}
-
-	public void setPrice(java.lang.Double price) {
-		this.price = price;
 	}
 
 	public com.redhat.insurancequoting.Driver getDriver() {
@@ -31,7 +23,15 @@ public class Quote implements java.io.Serializable {
 		this.driver = driver;
 	}
 
-	public Quote(java.lang.Double price,
+	public java.lang.Integer getPrice() {
+		return this.price;
+	}
+
+	public void setPrice(java.lang.Integer price) {
+		this.price = price;
+	}
+
+	public Quote(java.lang.Integer price,
 			com.redhat.insurancequoting.Driver driver) {
 		this.price = price;
 		this.driver = driver;
