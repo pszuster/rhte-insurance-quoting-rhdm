@@ -7,16 +7,12 @@ package com.myteam.quote;
 public class Driver implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
-
-	@org.kie.api.definition.type.Label("DriverID")
+	
+	
 	private java.lang.Integer driverID;
-	@org.kie.api.definition.type.Label("First Name")
 	private java.lang.String firstName;
-	@org.kie.api.definition.type.Label("Last Name")
 	private java.lang.String lastName;
-	@org.kie.api.definition.type.Label("Age")
 	private java.lang.Integer age;
-	@org.kie.api.definition.type.Label("Fines")
 	private java.lang.Integer fines;
 
 	public Driver() {
