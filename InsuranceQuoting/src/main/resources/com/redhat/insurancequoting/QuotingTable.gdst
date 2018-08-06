@@ -381,7 +381,7 @@
                 </parent>
               </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                <value>Calendar.getInstance().get(Calendar.YEAR)-@{minModelYear}</value>
+                <value>Calendar.getInstance().get(Calendar.YEAR)-$minModelYear</value>
                 <operator>&gt;=</operator>
                 <constraintValueType>3</constraintValueType>
                 <expression>
