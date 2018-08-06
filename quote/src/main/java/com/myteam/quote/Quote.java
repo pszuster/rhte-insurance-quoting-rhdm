@@ -25,7 +25,7 @@ public class Quote implements java.io.Serializable {
 		this.price = price;
 	}
 
-	public com.myteam.quote.driver getDriver() {
+	public com.myteam.quote.Driver getDriver() {
 		return this.driver;
 	}
 
