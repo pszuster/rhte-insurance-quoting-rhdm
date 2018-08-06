@@ -358,7 +358,7 @@
               </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
                 <value>$maxModelYear</value>
-                <operator>&lt;</operator>
+                <operator>&gt;=</operator>
                 <constraintValueType>7</constraintValueType>
                 <expression>
                   <parts/>
@@ -382,7 +382,7 @@
               </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
                 <value>$maxModelYear</value>
-                <operator>&gt;=</operator>
+                <operator>&lt;</operator>
                 <constraintValueType>7</constraintValueType>
                 <expression>
                   <parts/>
