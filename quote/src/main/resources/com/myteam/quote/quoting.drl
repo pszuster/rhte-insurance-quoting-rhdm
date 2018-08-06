@@ -1,2 +1,73 @@
 package com.myteam.quote;
 
+//from row number: 1
+//young
+rule "Row 1 quoting"
+	dialect "mvel"
+	when
+		quote: Quote(driver.age >= 18 && driver.age <25)
+	then
+	    quote.setPrice(quote.getPrice+100);
+end
+
+//from row number: 2
+//young adult
+rule "Row 2 quoting"
+	dialect "mvel"
+	when
+		quote: Quote(driver.age >= 25 && driver.age <35)
+	then
+		 quote.setPrice(quote.getPrice+200);
+end
+
+//from row number: 3
+//adult
+rule "Row 3 quoting"
+	dialect "mvel"
+	when
+	    quote: Quote(driver.age >= 35 && driver.age <60)
+	then
+		quote.setPrice(quote.getPrice+300);
+end
+
+//from row number: 4
+//old
+rule "Row 4 quoting"
+	dialect "mvel"
+	when 
+	    quote: Quote(driver.age >= 60)
+	then
+	    quote.setPrice(quote.getPrice+500);
+end
+
+//from row number: 5
+//few  fines
+rule "Row 5 quoting"
+	dialect "mvel"
+	when
+		quote: Quote(driver.fines >=1 && driver.fines <3)
+	then
+    	quote.setPrice(quote.getPrice+150);
+
+end
+
+//from row number: 6
+//some fines
+rule "Row 6 quoting"
+	dialect "mvel"
+	when
+		quote: Quote(driver.fines >=3 && driver.fines <6)
+	then
+		quote.setPrice(quote.getPrice+250);
+end
+
+//from row number: 7
+//lot of fines
+rule "Row 7 quoting"
+	dialect "mvel"
+	when
+			quote: Quote(driver.fines >=6)
+	then
+		quote.setPrice(quote.getPrice+500);
+end
+
