@@ -1,13 +1,53 @@
 <scenario>
-  <name>test</name>
+  <name>test.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
-  <fixtures/>
+  <fixtures>
+    <fact-data>
+      <type>Quote</type>
+      <fieldData>
+        <field-data>
+          <fieldName>driver</fieldName>
+          <fact>
+            <type>com.redhat.insurancequoting.Driver</type>
+            <fieldData>
+              <field-data>
+                <name>age</name>
+                <value>20</value>
+                <nature>4</nature>
+              </field-data>
+            </fieldData>
+          </fact>
+        </field-data>
+      </fieldData>
+      <name>quote</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <execution-trace/>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>price</fieldName>
+          <expected>100</expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>quote</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
+  </fixtures>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.redhat</packageName>
   <imports>
-    <imports/>
+    <imports>
+      <org.kie.soup.project.datamodel.imports.Import>
+        <type>com.redhat.insurancequoting.Quote</type>
+      </org.kie.soup.project.datamodel.imports.Import>
+    </imports>
   </imports>
-  <ksessions/>
+  <ksessions>
+    <string>ksession</string>
+  </ksessions>
 </scenario>
