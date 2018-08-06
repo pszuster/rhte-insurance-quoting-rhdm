@@ -6,12 +6,23 @@ package com.redhat.insurancequoting;
 
 public class Quote implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Quote() {
-    }
+	private java.lang.Double price;
 
+	public Quote() {
+	}
 
+	public java.lang.Double getPrice() {
+		return this.price;
+	}
 
+	public void setPrice(java.lang.Double price) {
+		this.price = price;
+	}
+
+	public Quote(java.lang.Double price) {
+		this.price = price;
+	}
 
 }
