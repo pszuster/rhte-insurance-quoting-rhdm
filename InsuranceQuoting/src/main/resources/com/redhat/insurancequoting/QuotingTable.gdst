@@ -358,7 +358,7 @@
               </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
                 <value>$maxModelYear</value>
-                <operator>&lt;</operator>
+                <operator>&lt;=</operator>
                 <constraintValueType>7</constraintValueType>
                 <expression>
                   <parts/>
@@ -382,7 +382,7 @@
               </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
                 <value>$minModelYear</value>
-                <operator>&gt;=</operator>
+                <operator>&gt;</operator>
                 <constraintValueType>7</constraintValueType>
                 <expression>
                   <parts/>
@@ -1252,7 +1252,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2018</valueString>
+        <valueString>2019</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1398,12 +1398,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2010</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>2010</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
