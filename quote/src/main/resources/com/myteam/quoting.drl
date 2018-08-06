@@ -5,7 +5,7 @@ package com.myteam;
 rule "Row 1 quoting"
 	dialect "mvel"
 	when
-		quote: Quote(driver.age >= 18 && driver.age <25)
+		quote: quote.Quote(driver.age >= 18 && driver.age <25)
 	then
 	    quote.setPrice(quote.getPrice+100);
 end
@@ -15,7 +15,7 @@ end
 rule "Row 2 quoting"
 	dialect "mvel"
 	when
-		quote: Quote(driver.age >= 25 && driver.age <35)
+		quote: quote.Quote(driver.age >= 25 && driver.age <35)
 	then
 		 quote.setPrice(quote.getPrice+200);
 end
@@ -25,7 +25,7 @@ end
 rule "Row 3 quoting"
 	dialect "mvel"
 	when
-	    quote: Quote(driver.age >= 35 && driver.age <60)
+	    quote: quote.Quote(driver.age >= 35 && driver.age <60)
 	then
 		quote.setPrice(quote.getPrice+300);
 end
@@ -35,7 +35,7 @@ end
 rule "Row 4 quoting"
 	dialect "mvel"
 	when 
-	    quote: Quote(driver.age >= 60)
+	    quote: quote.Quote(driver.age >= 60)
 	then
 	    quote.setPrice(quote.getPrice+500);
 end
@@ -45,7 +45,7 @@ end
 rule "Row 5 quoting"
 	dialect "mvel"
 	when
-		quote: Quote(driver.fines >=1 && driver.fines <3)
+		quote: quote.Quote(driver.fines >=1 && driver.fines <3)
 	then
     	quote.setPrice(quote.getPrice+150);
 
@@ -56,7 +56,7 @@ end
 rule "Row 6 quoting"
 	dialect "mvel"
 	when
-		quote: Quote(driver.fines >=3 && driver.fines <6)
+		quote: quote.Quote(driver.fines >=3 && driver.fines <6)
 	then
 		quote.setPrice(quote.getPrice+250);
 end
@@ -66,7 +66,7 @@ end
 rule "Row 7 quoting"
 	dialect "mvel"
 	when
-			quote: Quote(driver.fines >=6)
+			quote: quote.Quote(driver.fines >=6)
 	then
 		quote.setPrice(quote.getPrice+500);
 end
