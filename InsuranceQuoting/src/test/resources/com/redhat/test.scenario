@@ -56,7 +56,7 @@
       <fieldValues>
         <expect-field>
           <fieldName>price</fieldName>
-          <expected>100</expected>
+          <expected>1100</expected>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
