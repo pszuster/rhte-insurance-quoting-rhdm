@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.myteam</groupId>
   <artifactId>quote</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.3</version>
   <name>quote</name>
   <description></description>
   <repositories>
