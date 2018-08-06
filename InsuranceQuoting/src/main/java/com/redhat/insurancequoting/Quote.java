@@ -12,6 +12,8 @@ public class Quote implements java.io.Serializable {
 
 	private com.redhat.insurancequoting.Driver driver;
 
+	private com.redhat.insurancequoting.Vehicle vehicle;
+
 	public Quote() {
 	}
 
@@ -31,10 +33,20 @@ public class Quote implements java.io.Serializable {
 		this.price = price;
 	}
 
+	public com.redhat.insurancequoting.Vehicle getVehicle() {
+		return this.vehicle;
+	}
+
+	public void setVehicle(com.redhat.insurancequoting.Vehicle vehicle) {
+		this.vehicle = vehicle;
+	}
+
 	public Quote(java.lang.Integer price,
-			com.redhat.insurancequoting.Driver driver) {
+			com.redhat.insurancequoting.Driver driver,
+			com.redhat.insurancequoting.Vehicle vehicle) {
 		this.price = price;
 		this.driver = driver;
+		this.vehicle = vehicle;
 	}
 
 }
