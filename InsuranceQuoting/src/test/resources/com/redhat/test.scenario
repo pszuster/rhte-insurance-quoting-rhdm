@@ -16,6 +16,11 @@
                 <value>20</value>
                 <nature>4</nature>
               </field-data>
+              <field-data>
+                <name>fines</name>
+                <value>2</value>
+                <nature>4</nature>
+              </field-data>
             </fieldData>
           </fact>
         </field-data>
@@ -23,6 +28,24 @@
           <name>price</name>
           <value>0</value>
           <nature>4</nature>
+        </field-data>
+        <field-data>
+          <fieldName>vehicle</fieldName>
+          <fact>
+            <type>com.redhat.insurancequoting.Vehicle</type>
+            <fieldData>
+              <field-data>
+                <name>mileage</name>
+                <value>500</value>
+                <nature>4</nature>
+              </field-data>
+              <field-data>
+                <name>modelYear</name>
+                <value>2017</value>
+                <nature>4</nature>
+              </field-data>
+            </fieldData>
+          </fact>
         </field-data>
       </fieldData>
       <name>quote</name>
