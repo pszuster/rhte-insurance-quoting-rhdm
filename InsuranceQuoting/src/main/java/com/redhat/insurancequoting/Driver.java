@@ -13,8 +13,16 @@ public class Driver implements java.io.Serializable {
 	private java.lang.String lastName;
 	private java.lang.Integer age;
 	private java.lang.Integer fines;
+	private java.lang.Boolean validLicense;
 
 	public Driver() {
+	}
+	
+	public java.lang.Boolean getValidLicense(){
+		return this.validLicense;
+	}
+	public void setValidLicense(java.lang.Boolean validLicense){
+		this.validLicense = validLicense;
 	}
 
 	public java.lang.Integer getDriverID() {
@@ -59,12 +67,13 @@ public class Driver implements java.io.Serializable {
 
 	public Driver(java.lang.Integer driverID, java.lang.String firstName,
 			java.lang.String lastName, java.lang.Integer age,
-			java.lang.Integer fines) {
+			java.lang.Integer fines, java.lang.Boolean validLicense) {
 		this.driverID = driverID;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.age = age;
 		this.fines = fines;
+		this.validLicense = validLicense;
 	}
 
 }
